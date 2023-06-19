@@ -25,7 +25,7 @@ public class Utils {
 
     public static int CalculateDate(int year, int month, int day) {
         LocalDate currentDate = LocalDate.now();
-        LocalDate birthday = LocalDate.of(year, month, day); // Replace with your actual birthday
+        LocalDate birthday = LocalDate.of(year, month, day);
 
         Period age = Period.between(birthday, currentDate);
         int yourAge = age.getYears();
